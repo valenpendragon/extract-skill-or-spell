@@ -1,0 +1,23 @@
+Blur (T): Defensive spell. Makes subject harder to see/hear/
+smell. Subtracts 4 from DX of all attacks/spells against
+subject. Costs 1 ST to cast, and 1 more ST each turn
+thereafter until turned off.
+Detect Magic (T): Directed at any one item/being (weapon,
+door, figure, etc.) tells user whether the item is magic or
+has any spells on it. Does not identify the spell(s). Note:
+The GM makes the roll against adjDX; if the roll is missed,
+the GM says “It doesn’t seem to be magic,” whether or not
+the item is magic. Cost: 1 ST.
+Drop Weapon (T): Makes victim drop whatever is in one
+hand – a weapon, shield, or whatever. Will not make a ring
+or amulet fall off. Costs 1 ST, or 2 ST if victim’s basic ST is
+20 or more. A weapon or other object with Immunity (q.v.)
+to this spell will never be dropped accidentally; a roll of 17
+does not affect it.
+Image (C): Creates any image (see Images and Illusions)
+occupying one hex. Costs 1 ST.
+Light (T): Makes any small (3” or less) item glow like a torch
+(any color) for a full day. Will light up a ring, the end of
+your staff, your hand, etc. The wizard can make the light
+go out at any time, but must recast the spell to get it back.
+Costs 1 ST.

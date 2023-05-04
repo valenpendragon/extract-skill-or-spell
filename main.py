@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+import backend
 
 # This constant covers the way names of most skill, talents, or spells end and
 # the descriptive text begins.
@@ -78,6 +79,10 @@ def main():
             break
 
         match event:
+            case "convert":
+                filepath = values["file_choice"]
+                content = backend.load_file()
+
             case "exit":
                 break
 
