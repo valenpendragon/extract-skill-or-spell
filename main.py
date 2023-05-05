@@ -74,10 +74,16 @@ def main():
         match event:
             case "convert":
                 filepath = values["file_choice"]
+                filename = values["filename"]
+                folder = values["folder_choice"]
                 content = backend.load_file(filepath)
                 raw_spells = backend.find_spells_in_content(content)
                 spells_sans_linefeed = backend.remove_linefeeds(raw_spells)
-                finalized_spells = backend.finalized_spells(spells_sans_linefeed)
+                finalized_spells = backend.finalize_spells(spells_sans_linefeed)
+                backend.write_new_file(finalized_spells, folder, filename)
+                main_window["results"].update(value="Conversion completed.",
+                                              visible=True,
+                                              text_color="white")
 
             case "exit":
                 break

@@ -7,6 +7,8 @@ EXTRAS = ["Improvised Weapons", "Punch", "Dirty Fighting", "Kick",
           "Shrewd thrust", "Shrewd blow", "Throw", "Evade", "Prerequisites",
           "Disarming", "Note", "Show", "Combat", "Believe", "Do Not", "Come",
           "Fire", "Go That Way", "Kill", "Obey", "Quit", "Stop", "Surrender"]
+TEST_OUTPUT_DIR = "./output"
+TEST_OUTPUT_FILE = "output_test.txt"
 
 
 def load_file(filepath):
@@ -214,6 +216,38 @@ def check_for_bullet(s: str) -> bool:
     return s[0] == "•"
 
 
+def write_new_file(spells, dest_folder, new_filename) -> None:
+    """
+    This function writes a list of lists of strings to disk, adding break
+    lines for each string.
+    :param spells: list of lists of str
+    :param dest_folder: str
+    :param new_filename: str
+    :return: None
+    """
+    new_filepath = f"{dest_folder}/{new_filename}"
+    for spell in spells:
+        output = [line + "\n" for line in spell]
+        # Separate each spell by an extra line.
+        output[-1] = output[-1] + "\n"
+        with open(new_filepath, 'a') as file:
+            file.writelines(output)
+
+
+def finalize_spells(spells):
+    """
+    This function takes a list of lists of string with linefeeds removed
+    from all lines. It returns the spells as paragraph descriptions.
+    :param spells: list of lists of string
+    :return: list of lists of string
+    """
+    finalized_spells = []
+    for spell in spells:
+        updated_spell = find_paragraphs(spell)
+        finalized_spells.append(updated_spell)
+    return finalized_spells
+
+
 if __name__ == "__main__":
     filepath = TEST_DATA
     test_data = load_file(filepath)
@@ -221,8 +255,6 @@ if __name__ == "__main__":
     raw_spells = find_spells_in_content(test_data)
     print(raw_spells)
     spells_sans_linefeed = remove_linefeeds(raw_spells)
-    finalized_spells = []
-    for spell in spells_sans_linefeed:
-        updated_spell = find_paragraphs(spell)
-        finalized_spells.append(updated_spell)
+    finalized_spells = finalize_spells(spells_sans_linefeed)
     print(finalized_spells)
+    write_new_file(finalized_spells, TEST_OUTPUT_DIR, TEST_OUTPUT_FILE)

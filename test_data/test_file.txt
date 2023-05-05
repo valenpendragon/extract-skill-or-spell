@@ -1,23 +1,91 @@
-Blur (T): Defensive spell. Makes subject harder to see/hear/
-smell. Subtracts 4 from DX of all attacks/spells against
-subject. Costs 1 ST to cast, and 1 more ST each turn
-thereafter until turned off.
-Detect Magic (T): Directed at any one item/being (weapon,
-door, figure, etc.) tells user whether the item is magic or
-has any spells on it. Does not identify the spell(s). Note:
-The GM makes the roll against adjDX; if the roll is missed,
-the GM says “It doesn’t seem to be magic,” whether or not
-the item is magic. Cost: 1 ST.
-Drop Weapon (T): Makes victim drop whatever is in one
-hand – a weapon, shield, or whatever. Will not make a ring
-or amulet fall off. Costs 1 ST, or 2 ST if victim’s basic ST is
-20 or more. A weapon or other object with Immunity (q.v.)
-to this spell will never be dropped accidentally; a roll of 17
-does not affect it.
-Image (C): Creates any image (see Images and Illusions)
-occupying one hex. Costs 1 ST.
-Light (T): Makes any small (3” or less) item glow like a torch
-(any color) for a full day. Will light up a ring, the end of
-your staff, your hand, etc. The wizard can make the light
-go out at any time, but must recast the spell to get it back.
-Costs 1 ST.
+Scrying (S): The Scrying spell is used to see what is happening
+somewhere else, right now. Scrying into the past is very
+difficult, and scrying into the future is just as risky as any
+other form of fortune-telling; do not depend upon it!
+A perfect reflective surface is required, and some mirrors
+are enchanted for better scrying, but other things can be
+used:
+• A silver bowl of clear water, for quick visions only.
+• A cauldron of molten silver or other white metal. Lead
+has terribly poisonous fumes, and mercury has its own
+hazards, but either can be used in a pinch. Gallium works
+if you can find it!
+• A perfectly flat and freshly polished sheet of solid silver.
+Beware; the iron law of scrying is that “He who sees is
+seen.” Any scrying tool can open you to the occult vision
+of others. Therefore, the experienced wizard will empty his
+silver bowl, cover his mirror, or let his gallium cool to a
+rough surface!
+Roll vs. IQ, not DX. Scrying is difficult, requiring at
+least a 4/IQ roll. Add 1 die if the target is within wards or
+a pentagram. Add 1 die if there is an unbroken protective
+ring of silver around the place you seek to see.
+However, ignore all wards, and subtract 1 die, if there is
+a mirror or scrying tool in the place you are trying to see.
+The extent of the vision depends on the margin by which
+the roll is made:
+1-2 Quick glimpse, vision only. If you fear your
+mastery is too great and don’t want to spend
+strength, use a bowl of water as your mirror
+and your success will be only at this level.
+3-4 Ten seconds of sound with a single static
+image.
+5-6 Thirty seconds, sound only, or three seconds
+of vision – your choice.
+7-8 One minute, sound only, or ten seconds of
+vision – your choice.
+9 or 10 One minute, vision and sound.
+11 and up Three minutes, vision and sound.
+Only one attempt per subject per day. ST cost is equal
+to the margin of success, so a quick glimpse costs little but
+a detailed vision may leave the caster unconscious (never
+dead).
+Slippery Floor (T): Makes the floor over one megahex
+extremely slick. When any figure enters the slippery area,
+the player who cast the spell reveals it. Any figure in a hex
+made slippery, or any figure entering a slippery hex, must
+make his saving roll (3 dice against DX) to avoid falling
+in that hex. If the figure then enters another slippery hex in
+the same turn, it must roll again, and so on . . . and even if
+a figure simply stands still in a slippery hex, it must make
+the saving roll to avoid falling. A figure which falls in a
+slippery hex may try to stand next turn, but must make
+its 3-die DX roll to do so. Of course, it may choose to lie
+still, or to crawl out (see Crawling under Movement). This
+requires no DX roll.
+To figure the range for this spell, or any other thrown
+spell covering one MH, count the hexes from the wizard to
+the center of the MH involved; this is the DX penalty. This
+spell does affect images and illusions. Lasts 12 turns unless
+renewed. Cost: 3 ST.
+Staff III/Staff of Striking (S): Like Staff II, except that its
+occult attack may strike a figure two hexes away in any
+direction from the wizard, and the to-hit roll is made at
+DX+3.
+Also, the staff’s occult attack now bypasses the armor
+or natural defense of its target. Magical defenses such as
+Stone Flesh still operate.
+Sticky Floor (T): Makes an area of floor 1 MH in size
+magically “sticky.” The only effect is on figures’ movement.
+Any figure entering a “sticky” floor area stops immediately.
+Each turn thereafter, his MA is reduced to l. A figure with
+a ST over 30 has MA 2. An area cannot be both “slippery”
+and “sticky” due to magic; the second spell cast will fail to
+work. This spell affects images and illusions. This effect
+lasts 12 turns unless renewed. Cost: 3 ST.
+Stone Flesh (T): Gives subject’s body the power to act as
+armor, stopping 4 hits per attack. The protective effect of
+Stone Flesh is cumulative with any other natural or magical
+hit-stopping ability (armor, fur, etc.) of its possessor, but
+not with Iron or Diamond Flesh. There is no way to tell
+if a figure is protected by this spell except to hit it or use
+Reveal Magic. Costs 2 ST to cast, plus 1 each turn the spell
+continues.
+Stop (T): The victim of this spell has a MA of zero for the
+next four turns. He or she may do anything else, but may
+not move to another hex under any circumstances. Cost:
+3 ST.
+Summon Gargoyle (C): Brings a regular Gargoyle (ST 20,
+DX 11, IQ 8, MA 8 on ground, 16 in air, fist does 2 dice
+damage, skin stops 3 hits) to serve wizard. (See Summoned
+Creatures.) Costs 4 ST, plus 1 each turn the Gargoyle stays.
