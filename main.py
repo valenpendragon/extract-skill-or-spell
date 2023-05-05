@@ -75,7 +75,9 @@ def main():
             case "convert":
                 filepath = values["file_choice"]
                 content = backend.load_file(filepath)
-
+                raw_spells = backend.find_spells_in_content(content)
+                spells_sans_linefeed = backend.remove_linefeeds(raw_spells)
+                finalized_spells = backend.finalized_spells(spells_sans_linefeed)
 
             case "exit":
                 break
