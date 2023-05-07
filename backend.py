@@ -162,7 +162,10 @@ def find_paragraphs(remaining_txt: list,
     # any duplicate first lines. This will correct a bug in which the first line
     # ends with a period or other indicator of the potential end of a paragraph.
     # We can remove these duplicates quite easily.
-    paragraphs = check_for_duplication(paragraphs)
+    # Due to the amount of text involved here, it is possible that an empty
+    # paragraph can be generated. This fixes one aspect of this bug.
+    if len(paragraphs) >= 2:
+        paragraphs = check_for_duplication(paragraphs)
     return paragraphs
 
 
@@ -226,8 +229,12 @@ def write_new_file(spells, dest_folder, new_filename) -> None:
     :return: None
     """
     new_filepath = f"{dest_folder}/{new_filename}"
-    for spell in spells:
+    for idx, spell in enumerate(spells):
+        print(f"idx: {idx}. spell: {spell}")
+        if spell == []:
+            continue
         output = [line + "\n" for line in spell]
+        print(f"output: {output}")
         # Separate each spell by an extra line.
         output[-1] = output[-1] + "\n"
         with open(new_filepath, 'a') as file:
