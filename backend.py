@@ -1,12 +1,14 @@
 from pathlib import Path
 
 TEST_DATA = "./test_data/test_file.txt"
-NAME_ENDS = ["(1)", "(2)", "(3)", "(T)", "(M)", "(C)", "(S)"]
+NAME_ENDS = ["(1):", "(2):", "(3):", "(T)", "(M)", "(C)", "(S)",
+             "(1).", "(2).", "(3)."]
 EXTRAS = ["Improvised Weapons", "Punch", "Dirty Fighting", "Kick",
           "Bonus to Damage", "Bonus to Defend", "Two Weapons", "Two Weapons",
           "Shrewd thrust", "Shrewd blow", "Throw", "Evade", "Prerequisites",
           "Disarming", "Note", "Show", "Combat", "Believe", "Do Not", "Come",
-          "Fire", "Go That Way", "Kill", "Obey", "Quit", "Stop", "Surrender"]
+          "Fire", "Go That Way", "Kill", "Obey", "Quit", "Stop", "Surrender",
+          "Prerequisite"]
 TEST_OUTPUT_DIR = "./output"
 TEST_OUTPUT_FILE = "output_test.txt"
 
